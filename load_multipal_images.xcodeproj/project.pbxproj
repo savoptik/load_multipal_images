@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FEE290A121467BC80071378A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEE290A021467BC80071378A /* main.cpp */; };
+		FEE290AC21467CA90071378A /* libopencv_core.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE290A821467CA80071378A /* libopencv_core.3.4.1.dylib */; };
+		FEE290AD21467CA90071378A /* libopencv_imgproc.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE290A921467CA80071378A /* libopencv_imgproc.3.4.1.dylib */; };
+		FEE290AE21467CA90071378A /* libopencv_imgcodecs.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE290AA21467CA90071378A /* libopencv_imgcodecs.3.4.1.dylib */; };
+		FEE290AF21467CA90071378A /* libopencv_highgui.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE290AB21467CA90071378A /* libopencv_highgui.3.4.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		FEE2909D21467BC80071378A /* load_multipal_images */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = load_multipal_images; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE290A021467BC80071378A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FEE290A821467CA80071378A /* libopencv_core.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.4.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.4.1_5/lib/libopencv_core.3.4.1.dylib; sourceTree = "<group>"; };
+		FEE290A921467CA80071378A /* libopencv_imgproc.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.4.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.4.1_5/lib/libopencv_imgproc.3.4.1.dylib; sourceTree = "<group>"; };
+		FEE290AA21467CA90071378A /* libopencv_imgcodecs.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.4.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.4.1_5/lib/libopencv_imgcodecs.3.4.1.dylib; sourceTree = "<group>"; };
+		FEE290AB21467CA90071378A /* libopencv_highgui.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.4.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.4.1_5/lib/libopencv_highgui.3.4.1.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE290AC21467CA90071378A /* libopencv_core.3.4.1.dylib in Frameworks */,
+				FEE290AD21467CA90071378A /* libopencv_imgproc.3.4.1.dylib in Frameworks */,
+				FEE290AE21467CA90071378A /* libopencv_imgcodecs.3.4.1.dylib in Frameworks */,
+				FEE290AF21467CA90071378A /* libopencv_highgui.3.4.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +55,7 @@
 			children = (
 				FEE2909F21467BC80071378A /* load_multipal_images */,
 				FEE2909E21467BC80071378A /* Products */,
+				FEE290A721467CA80071378A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,17 @@
 				FEE290A021467BC80071378A /* main.cpp */,
 			);
 			path = load_multipal_images;
+			sourceTree = "<group>";
+		};
+		FEE290A721467CA80071378A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEE290A821467CA80071378A /* libopencv_core.3.4.1.dylib */,
+				FEE290AB21467CA90071378A /* libopencv_highgui.3.4.1.dylib */,
+				FEE290AA21467CA90071378A /* libopencv_imgcodecs.3.4.1.dylib */,
+				FEE290A921467CA80071378A /* libopencv_imgproc.3.4.1.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +166,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -165,7 +189,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -200,7 +224,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -222,6 +246,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -237,7 +262,15 @@
 		FEE290A521467BC80071378A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/3.4.1_5/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -245,7 +278,15 @@
 		FEE290A621467BC80071378A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/3.4.1_5/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
